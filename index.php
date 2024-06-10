@@ -17,6 +17,8 @@
             <label for="nome">Inserisci un testo molto lungo</label><br>
             <input type="text" placeholder="Text here..." name="testo"><br><br>
 
+            <label for="nome">Inserisci una parola da censurare nel testo</label><br>
+            <input type="text" placeholder="Word here..." name="censoredText"><br><br>
 
             <button type="submit">Invia</button>
 

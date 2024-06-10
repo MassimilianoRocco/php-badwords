@@ -2,6 +2,11 @@
 $testo = $_GET["testo"];
 $lunghezzatesto = strlen($testo);
 $realeLunghezzaTesto = $lunghezzatesto - substr_count($testo, ' ');
+
+$parolaCensurata= $_GET["censoredText"];
+
+$censoredText = str_replace($parolaCensurata, "***", $testo);
+$censoredTextLength = strlen($censoredText) - substr_count($censoredText, ' ');
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +26,10 @@ $realeLunghezzaTesto = $lunghezzatesto - substr_count($testo, ' ');
         <div class="text_box">
             <h3>La lunghezza del testo ricevuto è di: <?php echo $realeLunghezzaTesto; ?> </h3><br>
             <h1>Il testo è: <br> <?php echo $testo; ?></h1>
+        </div>
+        <div class="text_box">
+            <h3>La lunghezza del testo censurato è di: <?php echo $censoredTextLength; ?> </h3><br>
+            <h1>Il testo censurato è: <br> <?php echo $censoredText; ?></h1>
         </div>
     </div>
     

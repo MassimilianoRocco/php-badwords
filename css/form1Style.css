@@ -11,7 +11,7 @@ body{
 .container{
     height: 100vh;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     background-image: url("https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png");
     background-size: cover;
     background-position: 50%;
@@ -21,8 +21,7 @@ body{
     width: 400px;
     height: 500px;
     color: white;
-    margin-right: 5rem;
-    margin-top: 5rem;
+    margin: 5rem;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
